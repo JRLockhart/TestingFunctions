@@ -5,9 +5,32 @@
     xmlns:local="using:TestingFunctions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="958.564" Width="1599.448">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Button x:Name="button1" Content="Show A Message" 
+                HorizontalAlignment="Center" Click="button1_Click"/>
+
+        <Button x:Name="button2" Content="If/Else" Grid.Column="1" 
+                HorizontalAlignment="center" Click="button2_Click"/>
+        
+        <Button x:Name="Button3" Content="Another Conditional Test" 
+                HorizontalAlignment="center"  Grid.Row="1" Click="Button3_Click" />
+        
+        <Button x:Name="Button4" Content="A Loop" 
+                Grid.Row ="1" Grid.Column="1" HorizontalAlignment="center" Click="Button4_Click" />
+        <TextBlock x:Name="MyLabel"  VerticalAlignment="center" HorizontalAlignment="center"
+                    Grid.Row="2" Grid.ColumnSpan="2" Style="{StaticResource BodyTextBlockStyle}"/>
 
     </Grid>
 </Page>

@@ -25,6 +25,26 @@ namespace TestingFunctions
         public MainPage()
         {
             this.InitializeComponent();
+        }   
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
